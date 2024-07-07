@@ -1,0 +1,174 @@
+/* Base styles (already provided) */
+body {
+    background: #222;
+  }
+  
+  .card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 30px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+  }
+  
+  .search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 15px;
+    font-size: 18px;
+  }
+  
+  .search button {
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  .weather {
+    width: 120px;
+    margin-top: 30px;
+  }
+  
+  .city {
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: -45px;
+  }
+  
+  .temp {
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: -20px;
+  }
+  
+  .col img {
+    width: 40px;
+  }
+  
+  .imagecontainer {
+    display: none;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .card {
+      padding: 30px 20px;
+    }
+  
+    .search input {
+      font-size: 16px;
+      padding: 10px 20px;
+      height: 50px;
+    }
+  
+    .search button {
+      height: 50px;
+    }
+  
+    .weather {
+      width: 100px;
+    }
+  
+    .city {
+      font-size: 40px;
+    }
+  
+    .temp {
+      font-size: 35px;
+    }
+  
+    .details {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .details .col {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      padding: 20px 10px;
+    }
+  
+    .search {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .search input {
+      font-size: 14px;
+      padding: 10px 15px;
+      height: 45px;
+      margin: 0 0 10px;
+    }
+  
+    .search button {
+      height: 45px;
+      width: 100%;
+      font-size: 16px;
+    }
+  
+    .weather {
+      width: 80px;
+    }
+  
+    .city {
+      font-size: 30px;
+      margin-top: -30px;
+    }
+  
+    .temp {
+      font-size: 25px;
+      margin-top: -10px;
+    }
+  
+    .details {
+      padding: 0 10px;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .details .col {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 10px;
+      text-align: left;
+    }
+  
+    .details .col img {
+      margin-bottom: 0;
+      margin-right: 10px;
+    }
+  }
+  
